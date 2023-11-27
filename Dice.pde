@@ -49,7 +49,6 @@ class Die {
   int current;
   int r, g, b, a, x, y;
 
-  // constructor
   Die() {
     faces = 6;
     r = (int)(Math.random() * 255);
@@ -61,14 +60,12 @@ class Die {
     current = 0;
   }
 
-  // roll the die
   int roll() {
     int retval;
     retval = (int)(Math.random() *6) +1;
     return retval;
   }
 
-  // show the die
   void show() {
     System.out.println(current + " ");
   }
